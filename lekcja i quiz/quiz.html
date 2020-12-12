@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="home-box custom-box">
+        <h3>Instrukcja:</h3>
+        <p>Całkowita liczba pytań: <span class="total-quetions">5</span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="option-container">
+
+        </div>
+        <div class="next-button">
+            <button type="button" class="btn" onclick="next()">Następne</button>
+        </div>
+        <div class="answers-indicator">
+
+        </div>
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Wyniki</h1>
+        <table>
+            <tr>
+                <td>Ilość pytań</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Ilość prób</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Poprawnych odpowiedzi</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Złych odpowiedzi</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Procenty</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Wynik całkowity</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <!--<button type="button" class="btn" onclick="tryAgainQuiz()">Spróbuj ponownie</button>-->
+        <button type="button" class="btn" onclick="goToHome()">Powrót</button>
+    </div>
+
+
+
+    <script src=" js/question.js"> </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
