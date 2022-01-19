@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: sans-serif;
+    background-color: #3FA64E;
+}
+
+p {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.bear img {
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: jump 1.5s infinite;
+}
+
+a {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+@keyframes jump {
+    0% {
+        top: 35%;
+    }
+
+    50% {
+        top: 30%;
+    }
+
+    100% {
+        top: 35%;
+    }
+}
